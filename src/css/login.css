@@ -1,0 +1,13 @@
+form {
+  text-align: center;
+  margin: 5% auto;
+  width: 20%
+}
+
+h2, label {
+  margin: 40px auto;
+}
+
+input {
+  margin: 10px auto;
+}
