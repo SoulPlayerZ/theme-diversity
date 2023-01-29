@@ -3,13 +3,20 @@ import "../css/header.css"
 
 
 function Header () {
+
+  const selectTheme = ({ target }) => {
+    localStorage.setItem('theme', target.value)
+    // document.body.style.color= 'red';
+    console.log(target.value);
+  }
+
   return (
-    <header>
-      <label htmlFor="theme" class="select is-link">
-        <select id="theme">
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
+    <header className={ localStorage.getItem('theme') }>
+      <label htmlFor="theme" className="select is-link">
+        <select id="theme" onChange={selectTheme}>
+          <option value="Default">Default</option>
+          <option value="Trans">Trans</option>
+          <option value="Bi">Bi</option>
         </select>
       </label>
     </header>
