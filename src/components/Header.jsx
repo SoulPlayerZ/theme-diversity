@@ -6,7 +6,10 @@ function Header () {
 
   const selectTheme = ({ target }) => {
     localStorage.setItem('theme', target.value)
-    // document.body.style.color= 'red';
+
+    document.body.style.color = 'red';
+    document.body.className = 'a'
+
     console.log(target.value);
   }
 
@@ -14,9 +17,9 @@ function Header () {
     <header className={ localStorage.getItem('theme') }>
       <label htmlFor="theme" className="select is-link">
         <select id="theme" onChange={selectTheme}>
-          <option value="Default">Default</option>
-          <option value="Trans">Trans</option>
-          <option value="Bi">Bi</option>
+          <option value="default">Default</option>
+          <option value="trans">Trans</option>
+          <option value="bi">Bi</option>
         </select>
       </label>
     </header>
