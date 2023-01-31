@@ -6,12 +6,15 @@ header {
 
 .bi {
   background-color: aqua;
+  color: red;
 }
 
 .trans {
   background-color: blueviolet;
+  color: rgb(240, 239, 241);
 }
 
 .default {
   background-color: rgb(240, 239, 241);
+  color: blue;
 }

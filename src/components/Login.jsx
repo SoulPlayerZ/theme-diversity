@@ -3,7 +3,7 @@ import '../css/login.css';
 
 function Login () {
   return (
-    <form>
+    <form className={localStorage.getItem('theme') || 'default'}>
       <h2>Test Login Diversity </h2>
       <label htmlFor="login">Login
         <input type="text" className="input is-link" id="login" placeholder="your Login" />
