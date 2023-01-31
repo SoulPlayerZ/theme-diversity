@@ -1,22 +1,23 @@
-import React from "react";
-import "../css/header.css"
+import React, { useContext } from "react";
+import ThemeContext from "../context/ThemeContext";
+import "../css/header.css";
 
 
 function Header () {
+  const { setTheme } = useContext(ThemeContext);
 
-  const selectTheme = ({ target }) => {
-    localStorage.setItem('theme', target.value)
 
-    document.body.style.color = 'red';
-    document.body.className = 'a'
-
-    console.log(target.value);
+  const changeTheme = ({ target }) => {
+    localStorage.setItem('theme', target.value);
+    console.log("change");
+    setTheme(target.value);
+    console.log("dd");
   }
 
   return (
-    <header className={ localStorage.getItem('theme') }>
-      <label htmlFor="theme" className="select is-link">
-        <select id="theme" onChange={selectTheme}>
+    <header className={ localStorage.getItem('theme') || 'default' }>
+      <label htmlFor="theme" className={`select is-link` }>
+        <select id="theme" onChange={changeTheme} value={ localStorage.getItem('theme') || 'default' }>
           <option value="default">Default</option>
           <option value="trans">Trans</option>
           <option value="bi">Bi</option>

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import ThemeContext from "./ThemeContext";
 
 function ThemeProvider ({ children }) {
-  const [theme, setTheme] = useState([]);
+  const [theme, setTheme] = useState('');
 
 const contextValue = {
     theme,
-    setTheme
+    setTheme,
 };
 
 return (
