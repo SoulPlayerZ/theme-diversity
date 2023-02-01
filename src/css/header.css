@@ -7,14 +7,17 @@ header {
 .bi {
   background-color: aqua;
   color: red;
+  height: 100vh;
 }
 
 .trans {
   background-color: blueviolet;
   color: rgb(240, 239, 241);
+  height: 100vh;
 }
 
 .default {
-  background-color: rgb(240, 239, 241);
+  background-color: rgb(211, 196, 226);
   color: blue;
+  height: 100vh;
 }
