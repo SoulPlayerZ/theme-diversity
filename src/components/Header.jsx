@@ -9,13 +9,11 @@ function Header () {
 
   const changeTheme = ({ target }) => {
     localStorage.setItem('theme', target.value);
-    console.log("change");
     setTheme(target.value);
-    console.log("dd");
   }
 
   return (
-    <header className={ localStorage.getItem('theme') || 'default' }>
+    <header>
       <label htmlFor="theme" className={`select is-link` }>
         <select id="theme" onChange={changeTheme} value={ localStorage.getItem('theme') || 'default' }>
           <option value="default">Default</option>

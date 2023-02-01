@@ -8,12 +8,11 @@ function LoginPage () {
   const { setTheme } = useContext(ThemeContext);
 
   useEffect(() => {
-    console.log("a");
     setTheme(localStorage.getItem('theme') || 'default');
   })
     
   return (
-    <section>
+    <section className={localStorage.getItem('theme') || 'default'}>
         <Header />
         <Login />
     </section>
