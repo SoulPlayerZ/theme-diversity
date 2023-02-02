@@ -1,13 +1,17 @@
-form {
+.form-container {
   font-size: 20px;
   text-align: center;
   padding: 60px;
   margin: 0 auto;
-  width: 30%
+  width: 22em;
+} 
+
+label {
+  margin: 40px auto;
 }
 
-h2, label {
-  margin: 40px auto;
+h2 {
+  margin: auto auto 50px auto;
 }
 
 input {

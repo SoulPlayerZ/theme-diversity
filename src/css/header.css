@@ -5,7 +5,7 @@ header {
 }
 
 .default {
-  background-color: rgb(154, 150, 158);
+  background-color: #FAFAFA;
   color: rgb(38, 38, 170);
   height: 100vh;
   user-select: none;
@@ -13,7 +13,7 @@ header {
 
 .bi {
   background-image: linear-gradient(180deg, #B00B69, #A55EA7, #1D1CC9);
-  color: rgb(255, 255, 255);
+  color: #FCFCFC;
   height: 100vh;
   user-select: none;
 }
@@ -34,7 +34,7 @@ header {
 
 .pan {
   background-image: linear-gradient(180deg, #FF218C, #FFD800, #21B1FF);
-  color: rgb(90, 33, 146);
+  color: rgb(112, 38, 187);
   height: 100vh;
   user-select: none;
 }
@@ -48,7 +48,7 @@ header {
 
 .fluid{
   background-image: linear-gradient(180deg, #FF75A2, #F1F1F1, #BE18D6, #2C2C2C, #333EBD);
-  color: rgb(58, 38, 78);
+  color: rgb(95, 16, 173);
   height: 100vh;
   user-select: none;
 }
